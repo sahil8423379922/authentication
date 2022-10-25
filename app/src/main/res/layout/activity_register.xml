@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#1C1C1C"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="50dp"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/iconimg"/>
+
+
+
+    <EditText
+        android:id="@+id/firstname"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/buttondesign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="First Name"/>
+
+    <EditText
+        android:id="@+id/lastname"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/buttondesign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Last Name"/>
+
+    <EditText
+        android:id="@+id/contactno"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/buttondesign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Contact No"/>
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:background="@drawable/buttondesign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:elevation="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        android:background="@drawable/buttondesign"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Password"/>
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:background="@drawable/buttondesign"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Confirm Password"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signup"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:background="@drawable/backgroundcolour_button"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textAllCaps="false"
+        android:text="Signup"/>
+
+    <TextView
+        android:id="@+id/signin"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have account? Signin"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

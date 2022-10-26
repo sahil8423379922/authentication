@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#FBFFF7"
+    android:layout_height="match_parent"
+    tools:context=".HomeScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="#fff"
+        android:background="#9C27B0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="User Profile"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/toolbar"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/profile"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:id="@+id/name"
+        android:layout_below="@id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:text="Hello User"/>
+    <TextView
+        android:id="@+id/emailac"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:layout_below="@id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="example@gmail.com"
+        android:textSize="20dp"/>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/emailac"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:weightSum="10"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200"
+                android:textStyle="bold"
+                android:textColor="#252525"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:textSize="50dp"/>
+
+            <TextView
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:text="Available Coins"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="10"
+                android:layout_marginTop="10dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_weight="5"
+                    android:textColor="#fff"
+                    android:textAllCaps="false"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/buy_coin_design"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="Buy Coins"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_weight="5"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="#fff"
+                    android:background="@drawable/share_coin_design"
+                    android:layout_width="0dp"
+                    android:textAllCaps="false"
+                    android:layout_height="match_parent"
+                    android:text="Share Coins"/>
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <include
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_navigation"/>
+
+
+</RelativeLayout>

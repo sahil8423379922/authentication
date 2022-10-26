@@ -9,12 +9,21 @@
     tools:context=".MainActivity">
 
 
+    <ImageView
+        android:id="@+id/splash_screen"
+        android:layout_centerInParent="true"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/icon_sub_for_sub"/>
+
+
     <TextView
+        android:id="@+id/texttitle"
+        android:layout_below="@id/splash_screen"
         android:textColor="#000"
         android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/subtext"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:gravity="center"
@@ -22,11 +31,11 @@
         android:textSize="30dp" />
 
     <TextView
+        android:layout_below="@id/texttitle"
         android:textColor="#393939"
         android:id="@+id/subtext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/google_button"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="50dp"
         android:gravity="center"
@@ -35,6 +44,7 @@
 
 
     <com.google.android.gms.common.SignInButton
+        android:layout_below="@id/subtext"
         android:id="@+id/google_button"
         android:layout_width="match_parent"
         android:layout_height="65dp"

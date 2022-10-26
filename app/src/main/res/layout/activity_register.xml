@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Register">
+
+    <ProgressBar
+        android:translationZ="10dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"/>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -34,12 +41,12 @@
         android:layout_gravity="center"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/iconimg"/>
+        android:src="@drawable/icon_sub_for_sub"/>
 
 
 
     <EditText
-        android:id="@+id/firstname"
+        android:id="@+id/fullname"
         android:elevation="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
@@ -50,21 +57,21 @@
         android:background="@drawable/buttondesign"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="First Name"/>
+        android:hint="Full Name"/>
 
     <EditText
-        android:id="@+id/lastname"
+        android:id="@+id/whtsappnumber"
         android:elevation="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp"
-        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
         android:paddingLeft="10dp"
         android:drawablePadding="10dp"
         android:background="@drawable/buttondesign"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:hint="Last Name"/>
+        android:hint="Whats App Number"/>
 
     <EditText
         android:id="@+id/contactno"
@@ -79,6 +86,20 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="Contact No"/>
+
+        <EditText
+            android:id="@+id/town"
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/buttondesign"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Town / City"/>
 
 
 
@@ -149,4 +170,4 @@
 
     </LinearLayout>
     </ScrollView>
-</LinearLayout>
+</RelativeLayout>
